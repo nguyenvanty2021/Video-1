@@ -1,3 +1,4 @@
+import ReactPlayer from 'react-player';
 import VideoPlayer from 'react-video-js-player'
 import './App.css';
 import Car from './video/car.mp4';
@@ -10,6 +11,7 @@ function App() {
       <video autoPlay loop muted style={{}} >
         <source src={Car} type='video/mp4' />
       </video>
+      <ReactPlayer url="https://www.youtube.com/watch?v=Rq5SEhs9lws" controls={true} />
     </div>
   );
 }
